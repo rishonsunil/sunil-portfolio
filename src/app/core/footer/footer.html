@@ -1,0 +1,16 @@
+<footer class="footer-container">
+  <div class="footer-content">
+    <h2 class="footer-title">Dr. Sunil Job K.A.</h2>
+    <p class="footer-description">OBE and AI in Education Expert</p>
+    <div>
+      <small>© <span id="year"></span> Dr. Sunil Job. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+<!-- Add this script just before the closing body tag -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("year").textContent = new Date().getFullYear();
+  });
+</script>

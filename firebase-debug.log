@@ -1,0 +1,58 @@
+[debug] [2025-07-27T18:09:25.110Z] ----------------------------------------------------------------------
+[debug] [2025-07-27T18:09:25.113Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\risho\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-07-27T18:09:25.113Z] CLI Version:   14.11.1
+[debug] [2025-07-27T18:09:25.113Z] Platform:      win32
+[debug] [2025-07-27T18:09:25.113Z] Node Version:  v22.17.0
+[debug] [2025-07-27T18:09:25.113Z] Time:          Sun Jul 27 2025 23:39:25 GMT+0530 (India Standard Time)
+[debug] [2025-07-27T18:09:25.114Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-27T18:09:25.118Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-27T18:09:25.118Z] > authorizing via signed-in user (rishonsunil02@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Source\sunil-portfolio
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-07-27T18:09:50.519Z] Checked if tokens are valid: true, expires at: 1753643271722
+[debug] [2025-07-27T18:09:50.520Z] Checked if tokens are valid: true, expires at: 1753643271722
+[debug] [2025-07-27T18:09:50.521Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-27T18:09:50.522Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"portfolio"}
+[debug] [2025-07-27T18:09:51.141Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-07-27T18:09:51.141Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_UNAVAILABLE","suggestedProjectId":"portfolio-b98eb"}
+[debug] [2025-07-27T18:10:11.070Z] Checked if tokens are valid: true, expires at: 1753643271722
+[debug] [2025-07-27T18:10:11.070Z] Checked if tokens are valid: true, expires at: 1753643271722
+[debug] [2025-07-27T18:10:11.071Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-07-27T18:10:11.071Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"dr.suniljob"}
+[debug] [2025-07-27T18:10:11.292Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 400
+[debug] [2025-07-27T18:10:11.292Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT"}}
+[debug] [2025-07-27T18:10:11.292Z] Couldn't check if project ID dr.suniljob is available. Original error: FirebaseError: Failed to check if project ID is available. See firebase-debug.log for more info.
+[debug] [2025-07-27T18:10:21.877Z] Checked if tokens are valid: true, expires at: 1753643271722
+[debug] [2025-07-27T18:10:21.877Z] Checked if tokens are valid: true, expires at: 1753643271722
+[debug] [2025-07-27T18:10:21.877Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-07-27T18:10:21.877Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"dr.suniljob","name":"portfolio"}
+[debug] [2025-07-27T18:10:23.205Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2025-07-27T18:10:23.205Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2025-07-27T18:10:23.332Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\risho\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\risho\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.

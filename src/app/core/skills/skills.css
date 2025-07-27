@@ -1,0 +1,77 @@
+.skills-section {
+  padding: 60px 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Exactly 4 columns */
+  gap: 25px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+
+.skill-card {
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: left;
+  background-color: #f9fafb;
+  transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  font-size: 24px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* Color Variants */
+.skill-card.blue { background-color: #e0e7ff; }
+.skill-card.green { background-color: #dcfce7; }
+.skill-card.purple { background-color: #f3e8ff; }
+.skill-card.orange { background-color: #fef3c7; }
+.skill-card.red { background-color: #fee2e2; }
+.skill-card.teal { background-color: #d1fae5; }
+
+.skill-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.skill-card ul {
+  padding-left: 20px;
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.6;
+}
+.skill-card.cyan {
+  background-color: #ccfbf1; /* soft teal-cyan */
+}
+
+.skill-card.brown {
+  background-color: #fef3c7; /* warm amber like academic research */
+}

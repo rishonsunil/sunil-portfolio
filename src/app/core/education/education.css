@@ -1,0 +1,56 @@
+.edu-cert-section {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+}
+
+.edu-cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1d4ed8;
+  margin-bottom: 25px;
+}
+
+.card-item {
+  margin-bottom: 20px;
+}
+
+.card-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.card-item p {
+  font-size: 15px;
+  color: #374151;
+  margin: 2px 0;
+}
+
+.subtext {
+  color: #6b7280;
+  font-size: 14px;
+}
